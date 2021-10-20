@@ -1,0 +1,28 @@
+[gd_scene format=2]
+
+[node name="Main menu" type="VBoxContainer"]
+anchor_left = 0.3
+anchor_right = 0.7
+anchor_bottom = 1.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="."]
+margin_top = 266.0
+margin_right = 409.0
+margin_bottom = 286.0
+text = "Start new game"
+
+[node name="Continue" type="Button" parent="."]
+margin_top = 290.0
+margin_right = 409.0
+margin_bottom = 310.0
+text = "Continue"
+
+[node name="Quit" type="Button" parent="."]
+margin_top = 314.0
+margin_right = 409.0
+margin_bottom = 334.0
+text = "Quit"
