@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=4 format=2]
 
 [sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.171, 0.45, 0.2361, 1 )
+bg_color = Color( 0.141176, 0.368627, 0.196078, 1 )
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -9,7 +9,7 @@ border_width_bottom = 2
 border_color = Color( 0.2795, 0.43, 0.317125, 1 )
 
 [sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.141176, 0.368627, 0.196078, 1 )
+bg_color = Color( 0.171, 0.45, 0.2361, 1 )
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
