@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Resources/Idk what these are for/8.tres" type="TileSet" id=1]
 [ext_resource path="res://Resources/Idk what these are for/4.tres" type="TileSet" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Resources/Idk what these are for/3.tres" type="TileSet" id=11]
 [ext_resource path="res://Resources/Idk what these are for/11.tres" type="TileSet" id=12]
 [ext_resource path="res://Scenes/Main menu.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Hut.tscn" type="PackedScene" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 3214.49, 28.3807 )
@@ -69,6 +70,9 @@ position = Vector2( 218.992, 557.249 )
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 238.728, -129.228 )
 current = true
+
+[node name="Hut" parent="." instance=ExtResource( 14 )]
+position = Vector2( -470.923, 210.186 )
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
