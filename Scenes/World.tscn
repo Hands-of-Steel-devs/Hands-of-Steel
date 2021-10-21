@@ -90,9 +90,3 @@ position = Vector2( 356.481, 621.091 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 301.605, 14.7654 )
 shape = SubResource( 1 )
-
-[node name="Main menu" parent="." instance=ExtResource( 13 )]
-margin_left = 224.0
-margin_top = 218.0
-margin_right = 679.0
-margin_bottom = 674.0
