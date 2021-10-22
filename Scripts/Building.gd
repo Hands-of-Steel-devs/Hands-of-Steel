@@ -1,4 +1,5 @@
 extends Node2D
+class_name Building
 
 export var building_name: String
 export var price: int
