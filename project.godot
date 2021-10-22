@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="2D City Builder"
-run/main_scene="res://Scenes/World.tscn"
+run/main_scene="res://Scenes/Main menu.tscn"
 config/icon="res://icon.png"
 
 [display]
