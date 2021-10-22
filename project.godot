@@ -14,6 +14,10 @@ config/name="2D City Builder"
 run/main_scene="res://Scenes/Main menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameManager="*res://Scripts/GameManager.gd"
+
 [display]
 
 window/size/height=640
