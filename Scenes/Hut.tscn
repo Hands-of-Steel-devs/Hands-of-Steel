@@ -30,4 +30,15 @@ position = Vector2( 488.049, 319.768 )
 scale = Vector2( 3.6891, 3.61153 )
 texture = ExtResource( 3 )
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 471.784
+margin_top = 264.377
+margin_right = 515.784
+margin_bottom = 309.377
+text = "  HUT
+-Free"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
