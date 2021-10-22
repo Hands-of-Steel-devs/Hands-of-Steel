@@ -6,6 +6,11 @@
 
 [node name="Well" type="Node2D"]
 script = ExtResource( 3 )
+building_name = "Well"
+building_label_node = NodePath("RichTextLabel")
+unlock_button_node = NodePath("Button")
+locked_sprite_node = NodePath("spr_Props")
+unlocked_sprite_node = NodePath("Sprite_finished")
 
 [node name="spr_Props" type="Sprite" parent="."]
 position = Vector2( 476.069, 367.001 )
@@ -40,5 +45,3 @@ margin_bottom = 398.059
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

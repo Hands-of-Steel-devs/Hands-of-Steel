@@ -1,16 +1,15 @@
-extends Node2D
-
-onready var sprite = $spr_Props
-onready var button = $Button
-onready var Text = $RichTextLabel
-onready var sprite_finish = $Sprite_finished
+extends Building
 
 func _ready():
-	sprite_finish.visible = false
+	connect("building_unlocked", self, "_on_building_unlocked")
 
+func _on_building_unlocked():
+	var timer = Timer.new()
+	timer.process_mode = Timer.TIMER_PROCESS_PHYSICS
+	timer.connect("timeout", self, "_print_money")
+	add_child(timer)
+	_print_money()
+	timer.start(10)
 
-func _on_Button_pressed():
-	sprite.visible = false
-	button.visible = false
-	Text.visible = false
-	sprite_finish.visible = true
+func _print_money():
+	GameManager.money =+ 1
