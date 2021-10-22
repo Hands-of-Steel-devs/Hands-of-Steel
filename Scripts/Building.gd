@@ -15,12 +15,14 @@ func _ready() -> void:
 	# TODO: Complain to Godot engine devs about not having lambda functions :)
 	get_node(building_label).text = "%s - %s" % [building_name, _get_price_string()]
 	get_node(unlock_button).text = "Unlock"
+	get_node(unlock_button).connect("pressed", self, "_on_unlock_button_pressed")
 	
 	get_node(locked_sprite).visible = true
 	get_node(unlocked_sprite).visible = false
 
 func _on_unlock_button_pressed() -> void:
 	get_node(unlock_button).visible = false
+	get_node(building_label).visible = false
 	emit_signal("building_unlocked")
 	
 	get_node(locked_sprite).visible = false
