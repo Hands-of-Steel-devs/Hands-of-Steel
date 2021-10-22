@@ -10,11 +10,17 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node2D",
+"class": "BaseBuilding",
+"language": "GDScript",
+"path": "res://Scripts/BaseBuilding.gd"
+}, {
+"base": "BaseBuilding",
 "class": "Building",
 "language": "GDScript",
 "path": "res://Scripts/Building.gd"
 } ]
 _global_script_class_icons={
+"BaseBuilding": "",
 "Building": ""
 }
 
