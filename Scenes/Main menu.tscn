@@ -1,21 +1,12 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Resources/new_theme.tres" type="Theme" id=1]
 [ext_resource path="res://Scenes/Main menu.gd" type="Script" id=2]
-[ext_resource path="res://Resources/Idk what these are for/6.tres" type="TileSet" id=3]
-[ext_resource path="res://Resources/Idk what these are for/8.tres" type="TileSet" id=4]
-[ext_resource path="res://Resources/Idk what these are for/9.tres" type="TileSet" id=5]
-[ext_resource path="res://Resources/Idk what these are for/1.tres" type="TileSet" id=6]
-[ext_resource path="res://Resources/Idk what these are for/11.tres" type="TileSet" id=7]
-[ext_resource path="res://Resources/Idk what these are for/3.tres" type="TileSet" id=8]
-[ext_resource path="res://Resources/Idk what these are for/5.tres" type="TileSet" id=9]
-[ext_resource path="res://Resources/Idk what these are for/7.tres" type="TileSet" id=10]
-[ext_resource path="res://Resources/Idk what these are for/4.tres" type="TileSet" id=11]
-[ext_resource path="res://Resources/Idk what these are for/2.tres" type="TileSet" id=12]
-[ext_resource path="res://Resources/Idk what these are for/10.tres" type="TileSet" id=13]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 3214.49, 28.3807 )
+[ext_resource path="res://Graphics/parallax_mountain_pack/layers/parallax-mountain-montain-far.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/parallax_mountain_pack/layers/parallax-mountain-trees.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/parallax_mountain_pack/layers/parallax-mountain-mountains.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/parallax_mountain_pack/layers/parallax-mountain-bg.png" type="Texture" id=7]
 
 [node name="Node" type="Node"]
 
@@ -51,72 +42,62 @@ margin_right = 409.0
 margin_bottom = 340.0
 text = "Quit"
 
-[node name="World" type="Node2D" parent="."]
+[node name="parallax-mountain-bg" type="Sprite" parent="."]
+position = Vector2( 512.302, 315.946 )
+scale = Vector2( 3.75783, 3.98395 )
+texture = ExtResource( 7 )
 
-[node name="TileMap10" type="TileMap" parent="World"]
-tile_set = ExtResource( 13 )
-format = 1
+[node name="parallax-mountain-montain-far" type="Sprite" parent="."]
+position = Vector2( 149.514, 552.948 )
+texture = ExtResource( 3 )
 
-[node name="TileMap11" type="TileMap" parent="World"]
-tile_set = ExtResource( 7 )
-format = 1
-tile_data = PoolIntArray( -39, 0, 0, -25, 0, 0, -11, 0, 0, -65533, 0, 0, -65519, 0, 0, -65505, 0, 0, -65491, 0, 0 )
+[node name="parallax-mountain-montain-far2" type="Sprite" parent="."]
+position = Vector2( 502.36, 545.17 )
+texture = ExtResource( 3 )
 
-[node name="not not not not not that visible" type="TileMap" parent="World"]
-tile_set = ExtResource( 5 )
-format = 1
-tile_data = PoolIntArray( -131112, 0, 0, -131101, 0, 0, -131090, 0, 0, -131077, 0, 0, -196600, 0, 0, -196595, 0, 0, -196591, 0, 0, -196576, 0, 0, -196563, 0, 0 )
+[node name="parallax-mountain-mountains" type="Sprite" parent="."]
+position = Vector2( 355.133, 554.355 )
+scale = Vector2( 1.31456, 1 )
+texture = ExtResource( 5 )
 
-[node name="TileMap3" type="TileMap" parent="World"]
-tile_set = ExtResource( 8 )
-format = 1
-tile_data = PoolIntArray( -65576, 0, 0, -65562, 0, 0, -65548, 0, 0, -131070, 0, 0, -131056, 0, 0, -131042, 0, 0, -131028, 0, 0, -131024, 0, 0, 524248, 0, 0, 524262, 0, 0, 524272, 0, 0, 524284, 0, 0, 458762, 0, 0, 458776, 0, 0, 458790, 0, 0, 458800, 0, 0 )
+[node name="parallax-mountain-trees" type="Sprite" parent="."]
+position = Vector2( 354.575, 554.362 )
+scale = Vector2( 1.31716, 1 )
+texture = ExtResource( 4 )
 
-[node name="not not not not that visible" type="TileMap" parent="World"]
-tile_set = ExtResource( 4 )
-format = 1
-tile_data = PoolIntArray( -65574, 0, 0, -65563, 0, 0, -65549, 0, 0, -65543, 0, 0, -131064, 0, 0, -131052, 0, 0, -131043, 0, 0, -131030, 0, 0 )
+[node name="parallax-mountain-foreground-trees" type="Sprite" parent="."]
+position = Vector2( 253.459, 553.655 )
+texture = ExtResource( 6 )
 
-[node name="not not not that visible" type="TileMap" parent="World"]
-tile_set = ExtResource( 10 )
-format = 1
-tile_data = PoolIntArray( -65576, 0, 0, -65562, 0, 0, -65547, 0, 0, -131071, 0, 0, -131059, 0, 0, -131046, 0, 0, -131035, 0, 0, -131026, 0, 0 )
+[node name="parallax-mountain-foreground-trees2" type="Sprite" parent="."]
+position = Vector2( 451.449, 553.655 )
+texture = ExtResource( 6 )
 
-[node name="not not that visible" type="TileMap" parent="World"]
-tile_set = ExtResource( 3 )
-format = 1
-tile_data = PoolIntArray( -65573, 0, 0, -65567, 0, 0, -65560, 0, 0, -65545, 0, 0, -131066, 0, 0, -131049, 0, 0, -131028, 0, 0 )
+[node name="parallax-mountain-montain-far3" type="Sprite" parent="."]
+position = Vector2( 864.793, 552.958 )
+texture = ExtResource( 3 )
 
-[node name="not that visible" type="TileMap" parent="World"]
-tile_set = ExtResource( 9 )
-format = 1
-tile_data = PoolIntArray( -65575, 0, 0, -65561, 0, 0, -65552, 0, 0, -65537, 0, 0, -131058, 0, 0, -131056, 0, 0, -131040, 0, 0, -131032, 0, 0 )
+[node name="parallax-mountain-montain-far4" type="Sprite" parent="."]
+position = Vector2( 1217.64, 545.18 )
+texture = ExtResource( 3 )
 
-[node name="visible" type="TileMap" parent="World"]
-tile_set = ExtResource( 11 )
-format = 1
-tile_data = PoolIntArray( -65577, 0, 0, -65565, 0, 0, -65556, 0, 0, -65543, 0, 0, -131066, 0, 0, -131052, 0, 0, -131039, 0, 0, -131026, 0, 0 )
+[node name="parallax-mountain-mountains2" type="Sprite" parent="."]
+position = Vector2( 1069.15, 554.155 )
+scale = Vector2( 1.31456, 1 )
+texture = ExtResource( 5 )
 
-[node name="Camera2D" type="Camera2D" parent="World"]
-position = Vector2( 457.72, 428.021 )
-current = true
+[node name="parallax-mountain-trees2" type="Sprite" parent="."]
+position = Vector2( 1069.85, 554.372 )
+scale = Vector2( 1.31716, 1 )
+texture = ExtResource( 4 )
 
-[node name="TileMap2" type="TileMap" parent="World"]
-tile_set = ExtResource( 12 )
-format = 1
-tile_data = PoolIntArray( -65576, 0, 0, -65563, 0, 0, -65550, 0, 0, -131072, 0, 0, -131058, 0, 0, -131044, 0, 0, -131032, 0, 0, -131026, 0, 0 )
+[node name="parallax-mountain-foreground-trees3" type="Sprite" parent="."]
+position = Vector2( 968.738, 553.665 )
+texture = ExtResource( 6 )
 
-[node name="TileMap" type="TileMap" parent="World"]
-tile_set = ExtResource( 6 )
-format = 1
-tile_data = PoolIntArray( -65576, 0, 0, -65563, 0, 0, -65557, 0, 0, -65544, 0, 0, -131066, 0, 0, -131052, 0, 0, -131039, 0, 0, -131026, 0, 0 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="World"]
-position = Vector2( 356.481, 621.091 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="World/StaticBody2D"]
-position = Vector2( 301.605, 14.7654 )
-shape = SubResource( 1 )
+[node name="parallax-mountain-foreground-trees4" type="Sprite" parent="."]
+position = Vector2( 1166.73, 553.665 )
+texture = ExtResource( 6 )
 
 [connection signal="pressed" from="CanvasLayer/Main menu/Start" to="CanvasLayer/Main menu" method="_on_Start_pressed"]
 [connection signal="pressed" from="CanvasLayer/Main menu/Continue" to="CanvasLayer/Main menu" method="_on_Continue_pressed"]
