@@ -8,6 +8,7 @@ onready var waw = $waw
 
 func _on_Button_pressed():
 	if GameManager.money > 10:
+		GameManager.money - 10
 		Sprite.visible = false
 		RichTextLabel.visible = false
 		Sprite_finish.visible = true
