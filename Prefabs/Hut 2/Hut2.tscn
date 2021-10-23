@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://spr_Props.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Hut2.gd" type="Script" id=2]
-[ext_resource path="res://pixil-frame-0 (2).png" type="Texture" id=3]
-[ext_resource path="res://pixil-frame-0 (4).png" type="Texture" id=4]
+[ext_resource path="res://Prefabs/Hut 2/Hut2.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/Sprites/pixil-frame-0 (4).png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Sprites/pixil-frame-0 (2).png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Sprites/spr_Props.png" type="Texture" id=4]
 
 [node name="Hut2" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 building_name = "Hut & road"
 price = 10
 locked_sprite_node = NodePath("Sprite")
@@ -17,7 +17,7 @@ unlock_button_node = NodePath("Button")
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 474.688, 353.934 )
 scale = Vector2( 2.30215, 2.48046 )
-texture = ExtResource( 1 )
+texture = ExtResource( 4 )
 hframes = 3
 vframes = 4
 frame = 9
@@ -35,13 +35,13 @@ __meta__ = {
 visible = false
 position = Vector2( 204.937, 341.103 )
 scale = Vector2( 3.6891, 3.61153 )
-texture = ExtResource( 4 )
+texture = ExtResource( 2 )
 
 [node name="waw" type="Sprite" parent="."]
 visible = false
 position = Vector2( 772.903, 339.981 )
 scale = Vector2( 3.6891, 3.61153 )
-texture = ExtResource( 4 )
+texture = ExtResource( 2 )
 
 [node name="Sprite_finished" type="Sprite" parent="."]
 visible = false

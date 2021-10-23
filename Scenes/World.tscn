@@ -12,9 +12,9 @@
 [ext_resource path="res://Resources/Idk what these are for/1.tres" type="TileSet" id=10]
 [ext_resource path="res://Resources/Idk what these are for/3.tres" type="TileSet" id=11]
 [ext_resource path="res://Resources/Idk what these are for/11.tres" type="TileSet" id=12]
-[ext_resource path="res://Scenes/Well.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Prefabs/Hut.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Scenes/Hut2.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Prefabs/Well/Well.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Prefabs/Hut/Hut.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Prefabs/Hut 2/Hut2.tscn" type="PackedScene" id=15]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 3214.49, 28.3807 )

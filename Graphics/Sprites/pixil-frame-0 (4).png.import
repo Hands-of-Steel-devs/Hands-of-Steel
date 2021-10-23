@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spr_Props.png-314c93a5c068d1f35a591e552591f619.stex"
+path="res://.import/pixil-frame-0 (4).png-726627dc053490534dc419703c16fba5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spr_Props.png"
-dest_files=[ "res://.import/spr_Props.png-314c93a5c068d1f35a591e552591f619.stex" ]
+source_file="res://Graphics/Sprites/pixil-frame-0 (4).png"
+dest_files=[ "res://.import/pixil-frame-0 (4).png-726627dc053490534dc419703c16fba5.stex" ]
 
 [params]
 
