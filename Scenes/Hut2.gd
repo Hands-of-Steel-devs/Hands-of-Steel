@@ -1,16 +1,12 @@
-extends Node2D
+extends Building
 
-onready var Sprite_finish = $Sprite_finished
-onready var Sprite = $Sprite
-onready var RichTextLabel = $RichTextLabel
 onready var wow = $wow 
 onready var waw = $waw
 
-func _on_Button_pressed():
-	if GameManager.money > 10:
-		GameManager.money - 10
-		Sprite.visible = false
-		RichTextLabel.visible = false
-		Sprite_finish.visible = true
-		wow.visible = true
-		waw.visible = true
+func _ready() -> void:
+	connect("building_unlocked", self, "_on_hut2_unlocked")
+	pass
+
+func _on_hut2_unlocked() -> void:
+	wow.visible = true
+	waw.visible = true

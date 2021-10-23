@@ -5,8 +5,14 @@
 [ext_resource path="res://pixil-frame-0 (2).png" type="Texture" id=3]
 [ext_resource path="res://pixil-frame-0 (4).png" type="Texture" id=4]
 
-[node name="Hut" type="Node2D"]
+[node name="Hut2" type="Node2D"]
 script = ExtResource( 2 )
+building_name = "Hut & road"
+price = 10
+locked_sprite_node = NodePath("Sprite")
+unlocked_sprite_node = NodePath("Sprite_finished")
+building_label_node = NodePath("RichTextLabel")
+unlock_button_node = NodePath("Button")
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 474.688, 353.934 )
@@ -53,5 +59,3 @@ text = "  HUT
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
