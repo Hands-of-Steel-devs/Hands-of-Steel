@@ -12,4 +12,4 @@ func _on_well_unlocked() -> void:
 	timer.start(10)
 
 func _print_money() -> void:
-	GameManager.money =+ 1
+	GameManager.money += 1
