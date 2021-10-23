@@ -71,11 +71,17 @@ position = Vector2( -1.01056, 0.507904 )
 [node name="Hut2" parent="." instance=ExtResource( 15 )]
 position = Vector2( -1011.77, 207.368 )
 
-[node name="Hut" parent="." instance=ExtResource( 14 )]
+[node name="Hut f1" parent="." instance=ExtResource( 14 )]
 position = Vector2( -470.923, 210.186 )
+
+[node name="Hut f2" parent="." instance=ExtResource( 14 )]
+position = Vector2( -279.461, 208.997 )
 
 [node name="Well" parent="." instance=ExtResource( 13 )]
 position = Vector2( -781.847, 184.794 )
+
+[node name="Well2" parent="." instance=ExtResource( 13 )]
+position = Vector2( -93.2962, 181.226 )
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
