@@ -71,6 +71,9 @@ position = Vector2( -1.01056, 0.507904 )
 [node name="Hut2" parent="." instance=ExtResource( 15 )]
 position = Vector2( -1011.77, 207.368 )
 
+[node name="Hut3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 129.869, 208.557 )
+
 [node name="Hut f1" parent="." instance=ExtResource( 14 )]
 position = Vector2( -470.923, 210.186 )
 
