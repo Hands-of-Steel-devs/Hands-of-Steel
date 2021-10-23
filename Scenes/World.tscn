@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Resources/Idk what these are for/8.tres" type="TileSet" id=1]
 [ext_resource path="res://Resources/Idk what these are for/4.tres" type="TileSet" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Resources/Idk what these are for/11.tres" type="TileSet" id=12]
 [ext_resource path="res://Scenes/Well.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Prefabs/Hut.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Hut2.tscn" type="PackedScene" id=15]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 3214.49, 28.3807 )
@@ -65,11 +66,10 @@ format = 1
 tile_data = PoolIntArray( -65577, 0, 0, -65565, 0, 0, -65556, 0, 0, -65543, 0, 0, -131066, 0, 0, -131052, 0, 0, -131039, 0, 0, -131026, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 9 )]
-position = Vector2( 218.992, 557.249 )
+position = Vector2( -1.01056, 0.507904 )
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2( 238.728, -129.228 )
-current = true
+[node name="Hut2" parent="." instance=ExtResource( 15 )]
+position = Vector2( -1011.77, 207.368 )
 
 [node name="Hut" parent="." instance=ExtResource( 14 )]
 position = Vector2( -470.923, 210.186 )
