@@ -25,6 +25,7 @@ func unlock() -> void:
 	if GameManager.money - price < 0:
 		emit_signal("not_enough_money")
 	elif not unlocked:
+		GameManager.money -= price
 		emit_signal("building_unlocked")
 		unlocked = true
 		locked_sprite.visible = false
