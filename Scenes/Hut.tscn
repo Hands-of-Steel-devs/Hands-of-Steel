@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://spr_Props.png" type="Texture" id=1]
+[ext_resource path="res://pixil-frame-0.png" type="Texture" id=3]
+
+[node name="Hut" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 474.688, 353.934 )
+scale = Vector2( 2.30215, 2.48046 )
+texture = ExtResource( 1 )
+hframes = 3
+vframes = 4
+frame = 9
+
+[node name="Button" type="Button" parent="."]
+margin_left = 456.472
+margin_top = 326.416
+margin_right = 527.472
+margin_bottom = 384.416
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite_finished" type="Sprite" parent="."]
+visible = false
+position = Vector2( 488.049, 319.768 )
+scale = Vector2( 3.6891, 3.61153 )
+texture = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 471.784
+margin_top = 264.377
+margin_right = 515.784
+margin_bottom = 309.377
+text = "  HUT
+-Free"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
