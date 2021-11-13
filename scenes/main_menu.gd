@@ -6,7 +6,7 @@ onready var Quit = $Quit
 # onready var Song = $AudioStreamPlayer2D
 
 func _on_Start_pressed():
-	get_tree().change_scene("res://scenes/World.tscn")
+	get_tree().change_scene("res://scenes/world.tscn")
 
 func _on_Continue_pressed():
 	pass
