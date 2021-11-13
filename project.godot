@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "BaseBuilding",
 "language": "GDScript",
-"path": "res://Scripts/BaseBuilding.gd"
+"path": "res://scripts/BaseBuilding.gd"
 }, {
 "base": "BaseBuilding",
 "class": "Building",
 "language": "GDScript",
-"path": "res://Scripts/Building.gd"
+"path": "res://scripts/Building.gd"
 } ]
 _global_script_class_icons={
 "BaseBuilding": "",
@@ -27,12 +27,12 @@ _global_script_class_icons={
 [application]
 
 config/name="2D City Builder"
-run/main_scene="res://Scenes/Main menu.tscn"
+run/main_scene="res://scenes/Main menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-GameManager="*res://Scripts/GameManager.gd"
+GameManager="*res://scripts/GameManager.gd"
 
 [display]
 

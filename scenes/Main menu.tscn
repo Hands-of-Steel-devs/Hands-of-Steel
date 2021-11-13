@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/Main menu.gd" type="Script" id=1]
+[ext_resource path="res://graphics/parallax_mountain_pack/layers/parallax-mountain-montain-far.png" type="Texture" id=2]
+[ext_resource path="res://graphics/parallax_mountain_pack/layers/parallax-mountain-trees.png" type="Texture" id=3]
+[ext_resource path="res://graphics/parallax_mountain_pack/layers/parallax-mountain-mountains.png" type="Texture" id=4]
+[ext_resource path="res://resources/new_theme.tres" type="Theme" id=5]
+[ext_resource path="res://graphics/parallax_mountain_pack/layers/parallax-mountain-foreground-trees.png" type="Texture" id=6]
+[ext_resource path="res://graphics/parallax_mountain_pack/layers/parallax-mountain-bg.png" type="Texture" id=7]
+
+[node name="Node" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Main menu" type="VBoxContainer" parent="CanvasLayer"]
+anchor_left = 0.3
+anchor_right = 0.7
+anchor_bottom = 1.0
+theme = ExtResource( 5 )
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="CanvasLayer/Main menu"]
+margin_top = 300.0
+margin_right = 409.0
+margin_bottom = 318.0
+text = "Start new game"
+
+[node name="Continue" type="Button" parent="CanvasLayer/Main menu"]
+visible = false
+margin_top = 311.0
+margin_right = 409.0
+margin_bottom = 329.0
+text = "Continue"
+
+[node name="Quit" type="Button" parent="CanvasLayer/Main menu"]
+margin_top = 322.0
+margin_right = 409.0
+margin_bottom = 340.0
+text = "Quit"
+
+[node name="parallax-mountain-bg" type="Sprite" parent="."]
+position = Vector2( 512.302, 315.946 )
+scale = Vector2( 3.75783, 3.98395 )
+texture = ExtResource( 7 )
+
+[node name="parallax-mountain-montain-far" type="Sprite" parent="."]
+position = Vector2( 149.514, 552.948 )
+texture = ExtResource( 2 )
+
+[node name="parallax-mountain-montain-far2" type="Sprite" parent="."]
+position = Vector2( 502.36, 545.17 )
+texture = ExtResource( 2 )
+
+[node name="parallax-mountain-mountains" type="Sprite" parent="."]
+position = Vector2( 355.133, 554.355 )
+scale = Vector2( 1.31456, 1 )
+texture = ExtResource( 4 )
+
+[node name="parallax-mountain-trees" type="Sprite" parent="."]
+position = Vector2( 354.575, 554.362 )
+scale = Vector2( 1.31716, 1 )
+texture = ExtResource( 3 )
+
+[node name="parallax-mountain-foreground-trees" type="Sprite" parent="."]
+position = Vector2( 253.459, 553.655 )
+texture = ExtResource( 6 )
+
+[node name="parallax-mountain-foreground-trees2" type="Sprite" parent="."]
+position = Vector2( 451.449, 553.655 )
+texture = ExtResource( 6 )
+
+[node name="parallax-mountain-montain-far3" type="Sprite" parent="."]
+position = Vector2( 864.793, 552.958 )
+texture = ExtResource( 2 )
+
+[node name="parallax-mountain-montain-far4" type="Sprite" parent="."]
+position = Vector2( 1217.64, 545.18 )
+texture = ExtResource( 2 )
+
+[node name="parallax-mountain-mountains2" type="Sprite" parent="."]
+position = Vector2( 1069.15, 554.155 )
+scale = Vector2( 1.31456, 1 )
+texture = ExtResource( 4 )
+
+[node name="parallax-mountain-trees2" type="Sprite" parent="."]
+position = Vector2( 1069.85, 554.372 )
+scale = Vector2( 1.31716, 1 )
+texture = ExtResource( 3 )
+
+[node name="parallax-mountain-foreground-trees3" type="Sprite" parent="."]
+position = Vector2( 968.738, 553.665 )
+texture = ExtResource( 6 )
+
+[node name="parallax-mountain-foreground-trees4" type="Sprite" parent="."]
+position = Vector2( 1166.73, 553.665 )
+texture = ExtResource( 6 )
+
+[connection signal="pressed" from="CanvasLayer/Main menu/Start" to="CanvasLayer/Main menu" method="_on_Start_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main menu/Continue" to="CanvasLayer/Main menu" method="_on_Continue_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main menu/Quit" to="CanvasLayer/Main menu" method="_on_Quit_pressed"]

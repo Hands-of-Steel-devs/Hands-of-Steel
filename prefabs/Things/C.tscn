@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://graphics/Background layers/Layer_0002_7.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Layer_0002_7" type="Sprite" parent="."]
+position = Vector2( 467.858, 396.226 )
+texture = ExtResource( 1 )
