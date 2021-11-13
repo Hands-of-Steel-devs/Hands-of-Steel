@@ -2,10 +2,11 @@ extends VBoxContainer
 
 onready var Start = $Start
 onready var Quit = $Quit
-onready var Song = $AudioStreamPlayer2D
+# @YesImBadProgrammer: where's this audio player?
+# onready var Song = $AudioStreamPlayer2D
 
 func _on_Start_pressed():
-	get_tree().change_scene("res://Scenes/World.tscn")
+	get_tree().change_scene("res://scenes/World.tscn")
 
 func _on_Continue_pressed():
 	pass

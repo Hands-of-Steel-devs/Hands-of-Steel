@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "BaseBuilding",
 "language": "GDScript",
-"path": "res://scripts/BaseBuilding.gd"
+"path": "res://scripts/base_building.gd"
 }, {
 "base": "BaseBuilding",
 "class": "Building",
 "language": "GDScript",
-"path": "res://scripts/Building.gd"
+"path": "res://scripts/building.gd"
 } ]
 _global_script_class_icons={
 "BaseBuilding": "",
@@ -32,7 +32,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-GameManager="*res://scripts/GameManager.gd"
+GameManager="*res://scripts/game_manager.gd"
 
 [display]
 
